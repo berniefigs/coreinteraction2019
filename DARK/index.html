@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<title>Exercise 2</title>
+<style>
+body {
+	background: black;
+}
+.container {
+  position: relative;
+  width: 50%;
+  margin: 10px 20px 0px 330px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 200%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+	font-family:'Shlop';
+  color: #d9d900;
+  font-size: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="container">
+  <img src="static.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">DARK</div>
+  </div>
+</div>
+</body>
+</html>
+
