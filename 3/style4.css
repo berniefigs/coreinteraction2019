@@ -1,0 +1,73 @@
+body {margin:0;
+font-family: 'Baskerville';
+}
+
+i {
+font-size: 30px;
+font-style: normal;
+height: 20px
+width: 40px;
+color: white;
+text-align: center;
+}
+
+p { color: white;
+font-family: 'Baskerville';
+font-size: 140px;
+text-align: center;
+margin: -10px 0px 0px 0px; }
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #9FC131;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: black;
+}
+
+.active {
+  background-color: black;
+}
+
+.container {
+  float: left;
+}
+
+.container2 {
+  float: right;
+}
+
+#text {
+  text-align: center;
+  background-color: #9FC131;
+  width: 480px;
+  height: 1000px;
+  top: 880px;
+  right: 500px;
+  z-index: 10;
+  
+}
+
+.shape {
+  position: absolute;
+}

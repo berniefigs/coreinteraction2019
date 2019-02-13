@@ -1,0 +1,50 @@
+body {margin:0;
+font-family: 'Baskerville';
+}
+
+p { color: #9FC131;
+font-family: 'Baskerville';
+font-size: 190px;
+text-align: center;
+margin: -10px 0px 0px 0px; }
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #9FC131;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #64313E;
+}
+
+.active {
+  background-color: #64313E;
+}
+
+
+.container {
+  float: right;
+}
+
+.container2 {
+  float: left;
+}
