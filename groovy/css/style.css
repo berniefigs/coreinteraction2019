@@ -1,0 +1,27 @@
+
+html {
+  font-family: 'Baskerville';
+}
+
+body {
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+body:hover {
+  background-color: green;
+ 
+}
+
+#clock {
+  color: green;
+  font-size: 15vw;
+  font-variant-numeric: tabular-nums;
+}
+
+#clock:hover {
+  color: orange;
+}
+
