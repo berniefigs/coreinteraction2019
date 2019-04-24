@@ -7,7 +7,7 @@ $(document).ready(function(){
 	var height = doc.height() - 100;
 
 
-	var shapes = [ $(".circle"), $(".triangle"), $(".square") ]
+	var shapes = [ $(".circle"), $(".circle2"), $(".circle3") ]
 
 	
 function randomStuff(){
@@ -24,7 +24,7 @@ setInterval(function(){
 
 randomStuff();
 
-},100)
+},150)
 
 	//end document ready function
 })
