@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>josef_albers</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+ 
+<style>
+body {
+width: 100%;
+height: 100%;
+}
+
+#base {
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+width: 100%;
+height: 100%;
+  background-color: transparent; 
+  position: fixed;
+  text-align: center;
+
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 70s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+ 
+  animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0%   {background-color:#1c1c1c; }
+  10%   {background-color:#404044 ; }
+  20%   {background-color:#515353; }
+
+  30%   {background-color:#cacacc; }
+
+  40%  {background-color:black; }
+
+  50%  {background-color:#015083; }
+
+  60%   {background-color:#528684; }
+
+  70%  {background-color:darkorange; }
+
+   80%   {background-color:#cb452f; }
+
+  90%   {background-color:#9B3235; }
+
+  100%   {background-color:#D4982A; }
+
+  
+ }
+
+#square {
+  margin: 15% 0 0 0;
+  padding: 0;
+
+width: 80%;
+height: 80%;
+  background-color: #434349 ;
+  display: inline-block;
+
+  -webkit-animation-name: ok; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 70s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  animation-name: ok;
+ 
+  animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes ok {
+   0%   {background-color:#3e3d42; }
+  10%   {background-color:#434349; }
+  20%   {background-color:#505155; }
+
+  30%   {background-color:#c3c4c8; }
+
+  40%  {background-color:#384244; }
+
+   50%   {background-color:#1B6FAF; }
+
+  60%   {background-color:#B14024; }
+
+  70%    {background-color:orange; }
+
+  80%   {background-color:#dc5a3f; }
+
+  90%   {background-color:#BD3F35; }
+
+  100%   {background-color:#BC3523; }
+
+ 
+
+}
+
+#square2 {
+  margin: 23% 0 0 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+width: 70%;
+height: 70%;
+  background-color: transparent;
+    display: inline-block;
+
+-webkit-animation-name: hey; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 70s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  animation-name: hey;
+ 
+  animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes hey {
+   0%   {background-color:#c4c5c5; }
+  10%   {background-color:#212024; }
+  20%   {background-color:#5b6265; }
+
+  30%   {background-color:#9ea1a7; }
+
+  40%  {background-color:#3F715C; }
+
+
+    50%   {background-color:#D1CCBC; }
+
+  60%   {background-color:#BA6227; }
+
+
+  70%   {background-color:yellow; }
+
+  80%   {background-color:#e96740; }
+
+  90%   {background-color:#CA4D3E; }
+
+  100%   {background-color:#A32E1F; }
+
+}
+
+#square3 {
+     margin:32% 0 0 0;
+  padding: 0;
+  left: 0;
+  top: 0; 
+width: 60%;
+height: 60%;
+  background-color: transparent ;
+    display: inline-block;
+
+-webkit-animation-name: yeah; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 70s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  animation-name: yeah;
+ 
+  animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes yeah {
+   0%   {background-color:#dedfda; }
+  10%   {background-color:#121213 }
+  20%   {background-color:#696f74; }
+
+  30%   {background-color:#838990; }
+
+  40%  {background-color:#508449; }
+
+  50%   {background-color:#B5B6AD; }
+
+  60%    {background-color:#C6AC49; }
+
+  70%   {background-color:gold; }
+
+  80%    {background-color:#eb6949; }
+
+  90%   {background-color:#DC5341; }
+
+  100%   {background-color:#862421; }
+
+
+}
+
+</style>
+</head>
+
+<body>
+<div id="container">
+<div id="base">
+  <div id="square">
+    <div id="square2">
+      <div id="square3"></div>
+    </div>
+  </div>
+  </div></div>
+
+</body>
+</html>
