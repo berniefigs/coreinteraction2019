@@ -84,7 +84,7 @@ window.onload = function () {
         loadQuestion(current);
         loadAnswers(current);
       } else {
-        questionArea.innerHTML = '<a color="black" href="#">NEXT ROUND</a>';
+        questionArea.innerHTML = '<a color="black" href="https://berniefigs.github.io/coreinteraction2019/round4/index.html">NEXT ROUND</a>';
         answerArea.innerHTML = '';
       }
                               
