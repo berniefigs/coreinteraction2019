@@ -1,0 +1,85 @@
+
+i, h1{
+  font-size: 60px;
+  line-height: 1.5;
+}
+
+
+body, h1 {
+  overflow-x: hidden;
+  font-family:'Baskerville';
+  font-style: bold;
+  color: #D6D6D6;
+  text-align: center;
+}
+
+
+#okay {
+  height: 100vh;
+  width: 90vw;
+}
+
+#one { 
+  font-size: 80px;
+  transform: translateZ(20px);
+  z-index: 20;
+}
+
+#two { 
+  transform: translateZ(10px);
+  z-index: 20;
+}
+
+#three { margin: 20px 0 0 0;
+  text-align: center;
+  transform: translateZ(5px);
+  z-index: 5;
+}
+
+#page {
+  overflow:hidden;
+  white-space:nowrap;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:black;
+  display:flex;
+  flex-wrap:no-wrap;
+}
+.pane {
+  flex:0 0 100vw;
+  height:100vh;
+  display:flex;
+  position:relative;
+  align-items:center;
+  justify-content:center;
+  background-color: black;
+}
+
+
+.pane:nth-child(4n+2)  {
+  background-color: black;
+}
+.pane:nth-child(4n+3)  {
+  background-color: black;
+}
+.pane:nth-child(4n+4)  {
+  background-color: black;
+}
+
+.pane:nth-child(4n+5)  {
+  background-color: black4;
+}
+
+.pane:nth-child(4n+6)  {
+  background-color: black;
+}
+.pane:last-child {
+  background-color: black;
+}
+
+
+
+
