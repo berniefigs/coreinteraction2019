@@ -84,7 +84,7 @@ window.onload = function () {
         loadQuestion(current);
         loadAnswers(current);
       } else {
-        questionArea.innerHTML = 'GREAT JOB! <br> <a color="black", href="#"><i>BACK TO SITE</i></a>';
+        questionArea.innerHTML = 'GREAT JOB! <br> <a color="black", href="https://berniefigs.github.io/coreinteraction2019/hitch/index.html"><i>BACK TO SITE</i></a>';
         answerArea.innerHTML = '';
       }
                               
