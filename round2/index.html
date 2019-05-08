@@ -5,9 +5,37 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>ROUND TWO</title>
+  <style>nav {
+  font-size:30px;
+  position: fixed;
+ z-index: 1;
+  bottom: 30px;
+  word-spacing: 20px;
+}
+nav {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+nav :hover {
+  font-style: italic;
+}
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 20px); }
+    to   { transform: translate(0, -0px); }    
+}
+</style>
 </head>
 <body>
-  <div class="wrapper">
+  <div class="wrapper"><nav>
+              <a style="color:black; text-decoration: none;", "id="lmao", href="https://berniefigs.github.io/coreinteraction2019/hitch/index.html">TOP50</a>
+              <a style="color:black; text-decoration: none;", "id="damn";, href="https://www.imdb.com/name/nm0000033/bio">ABOUT</a>
+              <a style="color:black; text-decoration: none;", "id="shit";, href="https://berniefigs.github.io/coreinteraction2019/round1/index.html">TRIVIA</a>
+            </nav>
     <div id="quiz">
       <h1>TRIVIA QUIZ<br><i>ROUND TWO:<br>HITCHCOCK'S INFLUENCE</i></h1>
       
