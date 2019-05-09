@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+<script src="jquery-3.3.1.min.js"></script>
+ <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+ 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
+
+
+
+<style>
+
+
+body {
+	
+  margin: 0;
+  background-color:white;
+  padding: 0;
+
+}
+
+
+
+.cls-1,.cls-13,.cls-4{fill:none;}.cls-2{fill:#fcfaed;}.cls-3{fill:#666;}.cls-4{stroke:#f15a24;stroke-width:30px;}.cls-12,.cls-13,.cls-14,.cls-4{stroke-miterlimit:10;}.cls-5{fill:#f15a24;}.cls-6{fill:#662d91;}.cls-7{clip-path:url(#clip-path);}
+
+	.cls-8{fill:#009245;
+		}
+
+
+
+.cls-9{fill:#8cc63f;}.cls-10{clip-path:url(#clip-path-2);}.cls-11{clip-path:url(#clip-path-3);}.cls-12{fill:#fff;stroke-width:2px;}.cls-12,.cls-13,.cls-14{stroke:#000;}.cls-14{font-size:113px;fill:#fbb03b;font-family:Superclarendon-Italic, Superclarendon;font-style:italic;}
+
+ #skull {
+ 	object-fit: cover;
+ 	z-index: 1;
+ }
+
+ .cls-8{
+ 	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+ 
+  animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+ 
+  0%   {fill: #8cc63f;}
+  25%  {fill: #009245;}
+  50%  {fill: #8cc63f;}
+  100% {fill: #009245;}
+
+
+ }
+
+  .cls-9{
+ 	-webkit-animation-name: ok; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  animation-name: ok;
+ 
+  animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes ok {
+
+  0%   {fill: #009245;}
+  25%  {fill: #8cc63f;}
+  50%  {fill: #009245;}
+  100% {fill: #8cc63f;}
+ }
+
+  .cls-14{
+ 	-webkit-animation-name: alright; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes alright {
+
+  0%   {font-size: 150px;}
+  25%  {font-size: 170px;}
+  50%  {font-size: 113px;}
+   75%  {font-size: 175px;}
+  100% {font-size: 130px;}
+ }
+
+#play-pause-button{
+	position: fixed;
+bottom: 0;
+right: 0;
+text-align: right;
+  font-size: 10vh;
+  cursor: pointer;
+  color: #662D91;
+z-index: 1;
+}
+
+#container {
+	padding: 1px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;	
+	
+}
+
+
+#shape {
+	object-position: center;
+	top:115px;
+	bottom:0;
+	left:0;
+	width: 100vw;
+	position: fixed;
+	z-index: -10;
+}
+
+#ok {
+	object-position: center;
+	right:0;
+	top:230px;
+	bottom:0;
+	z-index: -10;
+
+width: 100vw;
+	position: fixed;
+}
+
+#wow {
+	object-position: center;
+	right:0;
+	top:345px;
+	z-index: -10;
+	bottom:0;
+
+width: 100vw;
+	position: fixed;
+}
+
+#haha {
+	object-position: center;
+	right:0;
+	top:460px;
+	bottom:0;
+z-index: -10;
+width: 100vw;
+	position: fixed;
+}
+
+#lmao {
+	object-position: center;
+	right:0;
+	top:575px;
+	bottom:0;
+z-index: -10;
+width: 100vw;
+	position: fixed;
+}
+
+#sure {
+	object-position: center;
+	right:0;
+	top:690px;
+	bottom:0;
+z-index: -10;
+width: 100vw;
+	position: fixed;
+}
+
+#hehe {
+	object-position: center;
+	right:0;
+	top:805px;
+	bottom:0;
+z-index: -10;
+width: 100vw;
+	position: fixed;
+}
+
+#fuck {
+	object-position: center;
+	right:0;
+	top:920px;
+	bottom:0;
+z-index: -10;
+width: 100vw;
+	position: fixed;
+}
+
+#shit {
+	object-position: center;
+	right:0;
+	top:1035px;
+	bottom:0;
+z-index: -10;
+width: 100vw;
+	position: fixed;
+}
+
+#lls {
+	object-position: center;
+	right:0;
+	top:1150px;
+	bottom:0;
+z-index: -10;
+width: 100vw;
+	position: fixed;
+}
+
+#kk {
+	object-position: center;
+	right:0;
+	top:1265px;
+	bottom:0;
+z-index: -10;
+width: 100vw;
+	position: fixed;
+}
+
+#shape3 {
+	object-position: center;
+	right:0;
+	top:0;
+z-index: -10;
+width: 100vw;
+	position: fixed;
+}
+#shape4 {
+
+	left:0;
+	top:0;
+	z-index: -10;
+	bottom:0;
+	background-color: transparent;
+	height: 600px;
+	width: 600px;
+	border-radius: 50%;
+	position: fixed;
+}
+#shape5 {
+	left:-0;
+	top:0;
+	bottom:0;
+	z-index: -10;
+	background-color: transparent;
+	height: 600px;
+	width: 600px;
+
+	position: fixed;
+}
+</style>
+</head>
+
+<body>
+	
+
+
+<div id="skull"> <svg id="SKULL_HEAD" data-name="SKULL HEAD" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 768">
+		
+			<clipPath id="clip-path"><ellipse class="cls-1" cx="353.78" cy="436.97" rx="98.29" ry="52.39" transform="translate(-41.97 37.62) rotate(-5.75)"/></clipPath><clipPath id="clip-path-2"><ellipse class="cls-1" cx="691.66" cy="341.61" rx="100.13" ry="51.43" transform="translate(-79.57 358.89) rotate(-27.57)"/></clipPath><clipPath id="clip-path-3"><polyline class="cls-1" points="630.21 512.75 708.08 649.1 460 716 480 577"/></clipPath></defs><title>LOCATION</title><path id="head" class="cls-2" d="M780.52,247.9C811.61,375.07,678.46,518.21,537.75,545,377,575.56,189.29,457.59,187,324,185,209.24,320.46,114.05,437,92,567.82,67.25,749.4,120.58,780.52,247.9Z"/><polyline id="jaw" class="cls-2" points="481.61 477.22 442.73 760.46 731.04 688.98 591.14 444.92"/><g id="nose"><polygon id="nose-2" data-name="nose" class="cls-3" points="570 496 557.58 498.95 545.16 501.9 548.17 486.95 551.18 472 560.59 484 570 496"/><ellipse class="cls-3" cx="552.5" cy="509" rx="8.5" ry="17"/><ellipse class="cls-3" cx="565.5" cy="505" rx="8.5" ry="17" transform="translate(-148.53 250.09) rotate(-22.12)"/></g><g id="sunglasses"><path class="cls-4" d="M433.92,431.3c-6.58-51.72,22.8-100.15,68-113.26,43.71-12.67,91.29,10.82,112.44,56.1"/><path class="cls-5" d="M542.65,383.42c5.83,29.56,75.56,46.79,132.05,31.7,105.8-28.27,174.35-172.33,152-201.66S685,260.13,645,285.57C594.09,318,536.92,354.3,542.65,383.42Z"/><polygon class="cls-5" points="848.71 180.22 810.56 198.16 772.4 216.09 797.67 241.48 822.94 266.87 835.83 223.55 848.71 180.22"/><path class="cls-5" d="M504.18,394.27c7.62,29.06-46.23,81.16-102.35,97.85-105.11,31.26-227.36-59-220.33-96.58s144.55-34.1,190.64-33C430.81,364,496.69,365.66,504.18,394.27Z"/><polygon class="cls-5" points="147.84 378.02 189.07 373.55 230.31 369.08 219.05 404.78 207.78 440.48 177.81 409.25 147.84 378.02"/><ellipse class="cls-5" cx="195.86" cy="390.98" rx="19.21" ry="10.19" transform="translate(-11.79 6.13) rotate(-1.74)"/><path class="cls-6" d="M496.34,400.67C504,429.73,450.11,481.83,394,498.52c-105.11,31.25-227.35-59-220.33-96.59s144.55-34.1,190.64-33C423,370.42,488.84,372.05,496.34,400.67Z"/><polygon class="cls-6" points="139.99 384.42 181.23 379.94 222.47 375.47 211.2 411.17 199.93 446.87 169.96 415.64 139.99 384.42"/><ellipse class="cls-5" cx="188.01" cy="397.38" rx="19.21" ry="10.19" transform="translate(-11.99 5.9) rotate(-1.74)"/><ellipse class="cls-5" cx="354.68" cy="437.18" rx="98.29" ry="52.39" transform="translate(-41.99 37.71) rotate(-5.75)"/><path class="cls-6" d="M551.91,385c5.83,29.57,75.56,46.79,132.05,31.7C789.75,388.42,858.3,244.35,835.94,215S694.27,261.7,654.27,287.14C603.35,319.51,546.18,355.87,551.91,385Z"/><polygon class="cls-6" points="857.97 181.79 819.82 199.73 781.66 217.66 806.93 243.05 832.2 268.43 845.08 225.11 857.97 181.79"/><ellipse class="cls-5" cx="821.36" cy="218.64" rx="19.69" ry="9.94" transform="matrix(0.86, -0.52, 0.52, 0.86, 5.65, 457.48)"/><ellipse class="cls-5" cx="692.08" cy="341.96" rx="100.13" ry="51.43" transform="translate(-79.68 359.13) rotate(-27.57)"/><g class="cls-7"><ellipse class="cls-8" cx="352.78" cy="434.46" rx="91.19" ry="82.99" transform="translate(-91.69 774.55) rotate(-88.34)"/><ellipse class="cls-9" cx="355.2" cy="436.75" rx="72.04" ry="65.57" transform="translate(-91.63 779.19) rotate(-88.34)"/><ellipse class="cls-8" cx="355.64" cy="437.96" rx="50.64" ry="46.09" transform="translate(-92.41 780.8) rotate(-88.34)"/><ellipse class="cls-9" cx="356.04" cy="437.79" rx="34.03" ry="30.97" transform="translate(-91.85 781.03) rotate(-88.34)"/><ellipse class="cls-8" cx="356.09" cy="438.7" rx="19.52" ry="17.76" transform="translate(-92.71 781.97) rotate(-88.34)"/></g><g class="cls-10"><ellipse class="cls-8" cx="691.45" cy="338.89" rx="91.19" ry="82.99" transform="translate(332.73 1020.26) rotate(-88.34)"/><ellipse class="cls-9" cx="690.31" cy="342.18" rx="72.04" ry="65.57" transform="translate(328.33 1022.31) rotate(-88.34)"/><ellipse class="cls-8" cx="690.45" cy="343.47" rx="50.64" ry="46.09" transform="translate(327.18 1023.71) rotate(-88.34)"/><ellipse class="cls-9" cx="690.03" cy="343.53" rx="34.03" ry="30.97" transform="translate(326.7 1023.34) rotate(-88.34)"/><ellipse class="cls-8" cx="690.37" cy="344.36" rx="19.52" ry="17.76" transform="translate(326.21 1024.49) rotate(-88.34)"/></g></g><g id="mouth"><g class="cls-11"><path class="cls-12" d="M701,572c10.48,10.72-9.74,60.47-47.4,84.13-66.41,41.72-169.14-9-167.35-25.11,1.2-10.78,48.3-.41,129.75-29C669.26,583.3,692.74,563.55,701,572Z"/><path class="cls-13" d="M488.5,631.5a216,216,0,0,0,59,12c21.55,1.3,64,3.29,106-22a159.51,159.51,0,0,0,48-45"/><line class="cls-13" x1="502.5" y1="624.5" x2="498.5" y2="645.5"/><line class="cls-13" x1="517.5" y1="624.5" x2="515.5" y2="654.5"/><line class="cls-13" x1="529.5" y1="622.5" x2="531.5" y2="660.5"/><line class="cls-13" x1="547.5" y1="620.5" x2="551.5" y2="666.5"/><line class="cls-13" x1="566.5" y1="617.5" x2="572.5" y2="670.5"/><line class="cls-13" x1="586.5" y1="611.5" x2="599.5" y2="672.5"/><line class="cls-13" x1="604.5" y1="606.5" x2="621.5" y2="668.5"/><line class="cls-13" x1="622.5" y1="600.5" x2="647.5" y2="658.5"/><line class="cls-13" x1="638.5" y1="594.5" x2="667.5" y2="645.5"/><line class="cls-13" x1="652.5" y1="587.5" x2="680.5" y2="631.5"/><line class="cls-13" x1="664.5" y1="582.5" x2="692.5" y2="611.5"/><line class="cls-13" x1="676.5" y1="577.5" x2="699.5" y2="598.5"/><line class="cls-13" x1="687.5" y1="571.5" x2="703.5" y2="583.5"/></g></g><text class="cls-14" transform="matrix(1, 0.06, -0.06, 1, 313.72, 477.53)">$</text><text class="cls-14" transform="matrix(0.93, -0.37, 0.37, 0.93, 667.22, 398.07)">$</text></svg></div>
+			 <a id="play-pause-button" class="fa fa-play"></a>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
+
+  
+
+    <script>var audio = new Audio("location.mp3");
+
+$('#play-pause-button').on("click",function(){
+  if($(this).hasClass('fa-play'))
+   {
+     $(this).removeClass('fa-play');
+     $(this).addClass('fa-pause');
+     audio.play();
+   }
+  else
+   {
+     $(this).removeClass('fa-pause');
+     $(this).addClass('fa-play');
+     audio.pause();
+   }
+});</script>
+<div id="shape"><div id="container">
+
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+</div></div>
+
+<div id="shape3"><div id="container">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+</div></div>
+
+<div id="ok"><div id="container">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png"></div></div>
+
+<div id="wow"><div id="container">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png"></div></div>
+
+<div id="haha"><div id="container">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png"></div></div>
+
+<div id="lmao"><div id="container">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png"></div></div>
+
+<div id="sure"><div id="container">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png"></div></div>
+
+<div id="hehe"><div id="container">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png"></div></div>
+
+
+<div id="fuck"><div id="container">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png"></div></div>
+
+<div id="shit"><div id="container">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png"></div></div>
+
+<div id="lls"><div id="container">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png"></div></div>
+
+<div id="kk"><div id="container">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png">
+<img src="money.png"></div></div>
+
+<div id="shape4"></div>
+<div id="shape5"></div>
+
+</body>
+</html>
+
+
