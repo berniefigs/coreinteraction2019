@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <style>
+  body {
+  	color: midnightblue;
+  	font-family: 'HK Grotesk';
+  	}
+
+  	ul {list-style-type: circle;
+  	
+  		}
+
+  		p.dotted {border-style: dotted;
+  			border-color: navy;}
+p.dashed {border-style: dashed; border-color: navy;}
+p.solid {border-style: solid; border-color: navy;}
+p.double {border-style: double; border-color: navy;}
+p.groove {border-style: groove; border-color: navy;}
+p.ridge {border-style: ridge; border-color: navy;}
+p.inset {border-style: inset; border-color: navy;}
+p.outset {border-style: outset; border-color: navy;}
+p.none {border-style: none; border-color: navy;}
+p.hidden {border-style: hidden; border-color: navy;}
+p.mix {border-style: dotted dashed solid double; border-color: navy;}
+
+p.seven {
+  border-style: solid;
+  border-width: 2px 10px 4px 20px; border-color: navy;;
+}
+
+p.three {
+  border-style: solid;
+  border-color: red green blue yellow;
+}
+
+p.hello {
+  border-style: dotted solid;
+  border-color: navy;
+}
+
+p.bye {
+  border-bottom: 6px solid navy;
+  }
+
+  p.normal {
+  border: 2px solid navy;
+}
+
+p.round1 {
+  border: 2px solid navy;
+  border-radius: 5px;
+}
+
+p.round2 {
+  border: 2px solid navy;
+  border-radius: 8px;
+}
+
+p.round3 {
+  border: 2px solid navy;
+  border-radius: 12px;
+}
+
+img {
+	height: 100vh;
+}
+
+img {
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+      filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+      -webkit-transition: all .8s ease-in-out;  
+    }
+
+    img:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
+    }
+</style>
+</head>
+
+<body> 
+	<h1>CSS Border Property</h1>
+		The css <b>border</b> properties allow you to specify the style, width, & color of an element's border.
+			<h3>Border Style</h3>
+			The <b>border-style</b> property specifies what kind of border to display.
+					<ul>
+					<li><i>dotted:</i> defines a dotted border</li>
+					<li><i>dashed:</i> defines a dashed border</li>
+					<li><i>solid:</i>  defines a solid border</li>
+					<li><i>double:</i>  defines a double border</li>
+					<li><i>groove:</i>  defines a 3D grooved border. the effect depends on the border-color value</li>
+					<li><i>ridge:</i>  defines a 3D ridged border. the effect depends on the border-color value</li>
+					<li><i>inset:</i>  define a 3D inset border. the effect depends on the border-color value</li>
+					<li><i>outset:</i>  defines a 3D outset border. the effect depends on the border-color value</li>
+					<li><i>none:</i>  defines no border</li>
+					<li><i>hidden:</i>  defines a hidden border</li></ul>
+
+					<p class="dotted">A dotted border.</p>
+					<p class="dashed">A dashed border.</p>
+					<p class="solid">A solid border.</p>
+					<p class="double">A double border.</p>
+					<p class="groove">A groove border.</p>
+					<p class="ridge">A ridge border.</p>
+					<p class="inset">An inset border.</p>
+					<p class="outset">An outset border.</p>
+					<p class="none">No border.</p>
+					<p class="hidden">A hidden border.</p>
+					<p class="mix">A mixed border.</p>
+
+						<h3>Border Width</h3> 
+						The <b>border-width</b> property specifices the width of the four border. The width can be set as a specific size (in px, pt, cm, em, etc) or by using on of the pre-defined values: thin, medium, or thick. The <b>border-width</b> property can have one to four values (for the top border, right border, bottom border, & the left border).
+
+						<p class="seven">Hello World!</p>
+
+						 
+									<h3>Border Color</h3> 
+								The <b>border-color</b> property is used to set the color of the four borders. <br>
+									The color can be set by: 
+									<uL><li>name - specify a color name, like "red"</li>
+										<li>hex - specify a hex value, like "#ff0000"</li>
+										<li>rgb - specify a rgb value. like "rgb(255, 0, 0)"</li>
+										<li>transparent</li></uL>
+
+
+									<p class="three">A solid multicolor border</p>
+
+
+		<h3>Border: Individual Sides</h3> 
+		In CSS, there are properties for specifying each of the borders (top, right, bottom, & left).
+
+		<p class="hello">2 different border styles.</p>
+
+		If the border-style property has four values: <br><br>
+
+		border-style: dotted solid double dashed; <br>
+		top border is dotted <br>
+		right border is solid <br>
+		bottom border is double <br>
+		left border is dashed <br>
+		If the border-style property has three values:<br><br>
+
+		border-style: dotted solid double;<br>
+		top border is dotted<br>
+		right and left borders are solid<br>
+		bottom border is double<br>
+		If the border-style property has two values:<br><br>
+
+		border-style: dotted solid;<br>
+		top and bottom borders are dotted<br>
+		right and left borders are solid<br>
+		If the border-style property has one value:<br><br>
+
+		border-style: dotted;<br>
+		all four borders are dotted<br>
+		The border-style property is used in the example above. However, it also works with border-width and border-color.
+
+<h3>Border: Shorthand Property</h3> 
+To shorten the code, it's possible to specify all the individual border properties in one property. <br> The <b>border</b> property is a shorthand property for the following individual border properties: <uL><li>border-width</li> <li>border-style (required)</li> <li>border-color</li></ul>
+<p class="bye">Hello world!</p>
+
+					<h3>Rounded Borders</h3> 
+					<p class="normal">Normal border</p>
+					<p class="round1">Round border</p>
+					<p class="round2">Rounder border</p>
+					<p class="round3">Roundest border</p>
+
+					<h3>Examples of Border in the Wild</h3>
+					<a href="https://en.wikipedia.org/wiki/Lana_Del_Rey"><img src="wiki.png"></a><br>
+					<a href="https://soundcloud.com/chromeshawty/sets"><img src="soundcloud.png"></a><br>
+					<a href="https://twitter.com/saahil2arora/status/1127812388860911621"><img src="twitta.png"></a><br>
+						<a href="https://www.youtube.com/watch?v=OTm67027slI"><img src="utube.png"></a><br>
+						<a href="https://lanadelrey.com/"><img src="lana.png"></a>
+
+
+
+
+
+	</body>
+	</html>
