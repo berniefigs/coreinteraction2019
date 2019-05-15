@@ -3,7 +3,7 @@ font-family: 'Baskerville';
 }
 
 i {
-font-size: 5%;
+font-size: 5vw;
 font-style: normal;
 height: 20px;
 width: 40px;
@@ -13,7 +13,7 @@ text-align: center;
 
 p { color: white;
 font-family: 'Baskerville';
-font-size: 5vw;
+font-size: 10vw;
 text-align: center;
 margin: -10px 0px 0px 0px; }
 
