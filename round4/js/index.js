@@ -82,7 +82,7 @@ window.onload = function () {
         loadQuestion(current);
         loadAnswers(current);
       } else {
-        questionArea.innerHTML = 'YOU GOT THIS <br> <a href="#"><i>LAST ROUND</i></a>';
+        questionArea.innerHTML = 'YOU GOT THIS <br> <a href="https://berniefigs.github.io/coreinteraction2019/round5/index.html"><i>LAST ROUND</i></a>';
         answerArea.innerHTML = '';
       }
                               
